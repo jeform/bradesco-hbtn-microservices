@@ -1,0 +1,18 @@
+MICROSSERVIÇOS - RESUMO PARA PALESTRA
+
+O que é microsserviços?
+Microsserviços é um estilo arquitetural onde uma aplicação é construída como um conjunto de serviços pequenos e independentes, cada um executando em seu próprio processo e comunicando-se através de mecanismos leves.
+
+Visão geral das arquiteturas:
+Arquitetura Monolítica: aplicação única e indivisível onde todos os componentes (interface, lógica de negócio e acesso a dados) estão integrados em uma única base de código e são implantados juntos.
+
+Arquitetura de Microsserviços: aplicação dividida em serviços menores e autônomos, cada um responsável por uma funcionalidade específica do negócio, podendo ser desenvolvidos, implantados e escalados independentemente.
+
+Benefícios da arquitetura de microsserviços:
+1. Escalabilidade independente - cada serviço pode ser escalado conforme sua demanda específica
+2. Resiliência - falha em um serviço não compromete todo o sistema
+3. Flexibilidade tecnológica - cada serviço pode usar tecnologias diferentes conforme necessidade
+
+Tipos de comunicação entre microsserviços:
+- Comunicação Síncrona: requisições HTTP/REST ou gRPC com resposta imediata
+- Comunicação Assíncrona: mensageria através de filas (RabbitMQ, Kafka) onde serviços se comunicam sem esperar resposta imediata
